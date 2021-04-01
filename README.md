@@ -33,3 +33,4 @@ to make a folder
 to add a file
 - path: the path at which you will make the folder, leave empty for root directory, must be presented as `folder/another folder`, the `/` is used to break between folders.
 - name: the name of the file, including `.` will be changed to `/`
+- data: the internal data
