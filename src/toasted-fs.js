@@ -96,7 +96,7 @@ class toastedDisk {
         }
         path = path.replaceAll("/", ".")
         path = path.split(".");
-        name = name.replaceAll(".", "_").replaceAll("/", ".")
+        name = name.replaceAll(".", "_").replaceAll("/", "")
         if (path == "") {
             this.vDisk[name] = data
         } else {  
