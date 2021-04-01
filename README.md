@@ -40,7 +40,7 @@ to add a file
 Data format is the schema for taking data a changing it to a format. when you provide a convert to key
 
 you will put this in the place of data in the touch command
-```json
+```
 {
     filePart: internal data,
     //the data for the inside of the file
