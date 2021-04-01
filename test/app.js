@@ -1,0 +1,10 @@
+var visk = new toastedDisk("floppyDrive", formats.fileObject)
+var s = visk.vDisk
+console.log(s)
+console.log(visk.getDisk())
+visk.mkdir("", "a_folder")
+visk.mkdir("a_folder", "a_folder")
+visk.touch("", "a_file", "data")
+visk.touch("a_folder/a_folder", "a_file", {filePart: "the data", type: "text/txt", fileName: "data.txt"}, toDiskFormat)
+console.log(visk.vDisk)
+print(visk.diskSize())
