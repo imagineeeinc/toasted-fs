@@ -47,5 +47,5 @@ you will put this in the place of data in the touch command
     type: the file type
     //file type is the type of file for example .js file will be 'text/js'
     fileName: the name of the file
-    //file name is only available in select dile formats
+    //file name is only available in select file formats
 }
