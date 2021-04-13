@@ -188,7 +188,7 @@ class toastedDisk {
             this.vDisk = disk(this.vDisk, indata, name)
         }
     }
-    type(path, name){}
+    type(path){}
 }
 function print(txt) {return console.log(txt)}
 function curTime() {return currentdate.getDate() + "/"
