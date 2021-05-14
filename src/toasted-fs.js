@@ -188,7 +188,18 @@ class toastedDisk {
             this.vDisk = disk(this.vDisk, indata, name)
         }
     }
-    type(path, name){}
+    type(path){
+        path = path.replaceAll(".", "_").replaceAll("/", ".").replaceAll(" ", "_")
+        path = path.split(".")
+
+        let disk = 'let output = disk'
+        for (var i=0;i<path.length;i++) {
+                disk += `['${path[i]}']`
+            }
+        disk += `\nreturn output`
+        disk = new Function('disk',disk)
+        return disk(this.vDisk)
+    }
 }
 function print(txt) {return console.log(txt)}
 function curTime() {return currentdate.getDate() + "/"

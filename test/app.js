@@ -9,3 +9,4 @@ visk.touch("", "a_cool_gif", {filePart: "the cool gif: https://plus.minecraft.ne
 visk.touch("a_folder/a_folder", "a_file", {filePart: "the data", type: "text/txt", fileName: "data.txt"}, toDiskFormat)
 console.log(visk.vDisk)
 print(visk.diskSize())
+print(visk.type("a_folder/a_folder/a_file"))
